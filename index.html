@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jambox Character Database</title>
+</head>
+<body>
+    <h1>Character Database</h1>
+    <form action="character.php" method="get">
+
+      <!--<h2>Create a Character</h2>-->
+
+        <div class="tab" id="form-step"> 
+            <h2>General Info:</h2>
+            
+            <p><label for="cname">Name: </label></p>
+            <input type="text" id="cname" name="cinfo">
+            <p><label for="age" id="age">Age: </label></p>
+            <input type="number" id="age"  name="cinfo">
+            <p><label for="description">Character Description: </label></p>
+            <textarea id="description" name="cinfo"></textarea>
+            <p><label for="portrait">Upload character portrait: </label></p>
+            <input type="file" id="portrait" accept="image/png,image/jpg,image/svg">
+        </div>
+
+        <div class="tab" id="form-step">
+            <h2>Origin:</h2>
+            <p><label for="ctype">Character Type: </label></p>
+            <input type="radio" id="original" name="ctype" value="OC">
+            <label for="original">OC</label>
+            <input type="radio" id="fandom" name="ctype" value="Fandom">
+            <label for="fandom">Fandom</label>
+            <p><label for="corigin">Where is this character from?</label></p>
+            <input type="text" id="corigin" name="cinfo">
+        </div>
+
+        <div class="tab" id="form-step">
+            <p><input type="submit" id="submission" value="Submit Character"></p>  
+        </div>
+    </form>
+
+    <!--<p>Display HTML form data after submission</p>-->
+</body>
+</html>

@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tab{
+    /*display: none;*/
+}
+
+.age{
+    width: 50px;
+}
